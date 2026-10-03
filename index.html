@@ -4,21 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ingeniería de Sistemas - Universidad de la Amazonia </title>
-  <link rel="stylesheet" href="Style/bootstrap.css">
+  <title>Ingeniería de Sistemas - Universidad de la Amazonia</title>
+  <link rel="stylesheet" href="style/bootstrap.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="Style/style.css">
+  <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
   <header>
-    <a class="header__enlace" target="_blank" href="https://www.uniamazonia.edu.co/Inicio/index.php/es/">
-      <img class="header__logo"
-        src="https://upload.wikimedia.org/wikipedia/commons/5/57/Logouniamazonia.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original"
-        alt="Universidad de la Amazonia">
+    <a class="header__enlace" target="_blank" rel="noopener" href="https://www.uniamazonia.edu.co/Inicio/index.php/es/">
+      <img class="header__logo" src="img/Logouniamazonia.png" alt="Universidad de la Amazonia">
     </a>
-    <i class="header__search bi bi-search "></i>
-    <i class="header__menu bi bi-list"></i>
+    <button class="header__search" type="button" aria-label="Buscar"><i class="bi bi-search"></i></button>
+    <button class="header__menu" type="button" aria-label="Abrir menú"><i class="bi bi-list"></i></button>
   </header>
 
   <main>
@@ -26,26 +24,23 @@
       <h1 class="main__carrera">INGENIERÍA DE SISTEMAS | CAMPUS FLORENCIA</h1>
     </div>
 
-    <ul class="indice">
-      <li class="indice__element indice__element--link"><a
-          href="https://www.uniamazonia.edu.co/inicio/index.php/es/">INICIO</a>
-        <span>/</span>
-      </li>
-      <li class="indice__element">PROGRAMAS
-        <span>/</span>
-      </li>
-      <li class="indice__element indice__element--link"><a
-          href="https://www.uniamazonia.edu.co/inicio/index.php/es/programas/pregrado.html">PREGRADO</a>
-        <span>/</span>
-      </li>
-      <li class="indice__element indice__element--link"><a
-          href="https://www.uniamazonia.edu.co/inicio/index.php/es/programas/pregrado/ingenieria.html">INGENIERÍA</a>
-        <span>/</span>
-      </li>
-      <li class="indice__element">INGENIERÍA DE SISTEMAS</li>
-    </ul>
+    <nav aria-label="Ruta de navegación">
+      <ol class="indice">
+        <li class="indice__element indice__element--link">
+          <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/">INICIO</a>
+        </li>
+        <li class="indice__element">PROGRAMAS</li>
+        <li class="indice__element indice__element--link">
+          <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/programas/pregrado.html">PREGRADO</a>
+        </li>
+        <li class="indice__element indice__element--link">
+          <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/programas/pregrado/ingenieria.html">INGENIERÍA</a>
+        </li>
+        <li class="indice__element" aria-current="page">INGENIERÍA DE SISTEMAS</li>
+      </ol>
+    </nav>
 
-    <div class="contenedor__info">
+    <div class="info">
       <p>Código SNIES: 52384</p>
       <p>Créditos: 178</p>
       <p>Modalidad: Presencial</p>
@@ -55,7 +50,7 @@
 
     <div class="fundamento">
       <div class="fundamento__general">
-        <h2>Misión</h2>
+        <h2 class="fundamento__titulo">Misión</h2>
         <p>El programa académico Ingeniería de Sistemas de la Universidad de la Amazonia, asume como encargo social la
           formación de profesionales íntegros, con capacidad para crear, innovar, formular y solucionar problemáticas
           organizacionales y productivas, apoyados en el desarrollo de sistemas de información soportados en las
@@ -63,7 +58,7 @@
           tecnológico de la región amazónica y del país.</p>
       </div>
       <div class="fundamento__general">
-        <h2>Visión</h2>
+        <h2 class="fundamento__titulo">Visión</h2>
         <p>Ingeniería de Sistemas será un programa académico en permanente acreditación académica y social, líder en la
           formación integral de profesionales, competentes en el campo académico, investigativo y humanístico;
           comprometidos con el desarrollo tecnológico de la región amazónica y del país apoyados en tecnologías de
@@ -71,51 +66,50 @@
       </div>
     </div>
 
+    <h2 class="main__subtitulo">Información del programa</h2>
+
     <div class="tabs">
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <ul class="nav nav-pills mb-3" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#contacto" type="button" role="tab"
             aria-selected="true">Contacto</button>
         </li>
-
         <li class="nav-item" role="presentation">
           <button class="nav-link" data-bs-toggle="pill" data-bs-target="#proposito" type="button" role="tab"
-            aria-selected="false">Proposito</button>
+            aria-selected="false">Propósito</button>
         </li>
-
         <li class="nav-item" role="presentation">
           <button class="nav-link" data-bs-toggle="pill" data-bs-target="#perfil" type="button" role="tab"
             aria-selected="false">Perfil</button>
         </li>
-
         <li class="nav-item" role="presentation">
           <button class="nav-link" data-bs-toggle="pill" data-bs-target="#requisito" type="button" role="tab"
             aria-selected="false">Requisitos</button>
         </li>
-
         <li class="nav-item" role="presentation">
           <button class="nav-link" data-bs-toggle="pill" data-bs-target="#documento" type="button" role="tab"
             aria-selected="false">Documentos</button>
         </li>
-
         <li class="nav-item" role="presentation">
           <button class="nav-link" data-bs-toggle="pill" data-bs-target="#inversion" type="button" role="tab"
             aria-selected="false">Inversión</button>
         </li>
       </ul>
 
-      <div class="tab-content" id="pills-tabContent">
+      <div class="tab-content">
         <div class="tab-pane fade show active" id="contacto" role="tabpanel" tabindex="0">
-          <p>Coordinadora de Programa:</p>
-          <p>Paula Andrea Chica Murcia.</p>
-          <p>Teléfono:</p>
-          <p>320 454 1936.</p>
-          <p>Correo electrónico:</p>
-          <a href="mailto:pisistemas@uniamazonia.edu.co" target="_blank"
-            rel="noopener noreferrer">pisistemas@uniamazonia.edu.co</a>
-          <p>Ubicación:</p>
-          <p>Florencia - Caquetá, Campus Florencia, barrio El Porvenir, bloque administrativo, primer piso.</p>
+          <dl class="contacto">
+            <dt>Coordinadora de Programa</dt>
+            <dd>Paula Andrea Chica Murcia</dd>
+            <dt>Teléfono</dt>
+            <dd>320 454 1936</dd>
+            <dt>Correo electrónico</dt>
+            <dd><a href="mailto:pisistemas@uniamazonia.edu.co">pisistemas@uniamazonia.edu.co</a></dd>
+            <dt>Ubicación</dt>
+            <dd>Florencia - Caquetá, Campus Florencia, barrio El Porvenir, bloque administrativo, primer piso.</dd>
+          </dl>
         </div>
+
         <div class="tab-pane fade" id="proposito" role="tabpanel" tabindex="0">
           <p>Propósito de formación del programa</p>
           <p>El Programa Ingeniería de Sistemas de la Universidad de la Amazonia, tiene como principal propósito,
@@ -127,6 +121,7 @@
             contribuyan al fortalecimiento y progreso económico, social, tecnológico y sustentable de la región
             Amazónica y el país.</p>
         </div>
+
         <div class="tab-pane fade" id="perfil" role="tabpanel" tabindex="0">
           <p>Perfil de egreso</p>
           <p>El Ingeniero de Sistemas de la Universidad de la Amazonia es un profesional que comprende las dinámicas del
@@ -137,15 +132,13 @@
         </div>
 
         <div class="tab-pane fade" id="requisito" role="tabpanel" tabindex="0">
-          <ul class="container_enlaces">
-            <a
-              href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-de-admision-registro-y-control-academico/228-aspirantes.html">
-              <div>
-                <i class="bi bi-box-arrow-up-right"></i>
-                Ver requisitos Clic aquí.
-              </div>
-            </a>
-          </ul>
+          <a
+            href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-de-admision-registro-y-control-academico/228-aspirantes.html">
+            <div>
+              <i class="bi bi-box-arrow-up-right"></i>
+              Ver requisitos, clic aquí.
+            </div>
+          </a>
         </div>
 
         <div class="tab-pane fade" id="documento" role="tabpanel" tabindex="0">
@@ -201,9 +194,8 @@
               Brochure Ingeniería de Sistemas.
             </div>
           </a>
-
-
         </div>
+
         <div class="tab-pane fade" id="inversion" role="tabpanel" tabindex="0">
           <a
             href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Superior/Acuerdos/2012/Acuerdo%20002%20-%20Por%20el%20cual%20se%20fijan%20los%20derechos%20pecuniarios.pdf">
@@ -220,11 +212,12 @@
             </div>
           </a>
         </div>
-
       </div>
     </div>
 
-    <div class="PlanEstudio">
+    <h2 class="main__subtitulo">Plan de estudios</h2>
+
+    <div class="plan">
       <div>
         <a
           href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Academico/Acuerdos/2020/Acuerdo%2044%20Plan%20de%20Estudios%20de%20Ingenieria%20de%20Sistemas.pdf">
@@ -234,50 +227,42 @@
           </div>
         </a>
         <a href="https://www.uniamazonia.edu.co/documentos/docs/Programas%20Academicos/Ingenieria%20de%20Sistemas/Plan%20de%20Estudios/Plan%20de%20estudios%202022.pdf"
-          target="_blank">
+          target="_blank" rel="noopener">
           <div>
             <i class="bi bi-filetype-pdf"></i>
-            PENSUM
+            Pensum
           </div>
         </a>
       </div>
 
-      <div id="carouselExampleIndicators" class="carousel slide">
+      <div id="planCarousel" class="carousel slide" aria-label="Plan de estudios por semestre">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-            aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-            aria-label="Slide 6"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-            aria-label="Slide 7"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
-            aria-label="Slide 8"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
-            aria-label="Slide 9"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
-            aria-label="Slide 10"></button>
+          <button type="button" data-bs-target="#planCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Semestre 1"></button>
+          <button type="button" data-bs-target="#planCarousel" data-bs-slide-to="1" aria-label="Semestre 2"></button>
+          <button type="button" data-bs-target="#planCarousel" data-bs-slide-to="2" aria-label="Semestre 3"></button>
+          <button type="button" data-bs-target="#planCarousel" data-bs-slide-to="3" aria-label="Semestre 4"></button>
+          <button type="button" data-bs-target="#planCarousel" data-bs-slide-to="4" aria-label="Semestre 5"></button>
+          <button type="button" data-bs-target="#planCarousel" data-bs-slide-to="5" aria-label="Semestre 6"></button>
+          <button type="button" data-bs-target="#planCarousel" data-bs-slide-to="6" aria-label="Semestre 7"></button>
+          <button type="button" data-bs-target="#planCarousel" data-bs-slide-to="7" aria-label="Semestre 8"></button>
+          <button type="button" data-bs-target="#planCarousel" data-bs-slide-to="8" aria-label="Semestre 9"></button>
+          <button type="button" data-bs-target="#planCarousel" data-bs-slide-to="9" aria-label="Semestre 10"></button>
         </div>
+
         <div class="carousel-inner">
 
           <div class="carousel-item active">
             <div class="plan__semestre">
               <h3 class="plan__titulo">Semestre 1</h3>
               <ul class="plan__materias">
-                <li class="plan__materia"><span>Comunicación </span><span>2</span></li>
-                <li class="plan__materia"><span>Deporte y Cultura </span><span>2</span></li>
-                <li class="plan__materia"><span>Matemáticas I </span><span>3</span></li>
-                <li class="plan__materia"><span>Física I </span><span>3</span></li>
-                <li class="plan__materia"><span>Biología General </span><span>3</span></li>
-                <li class="plan__materia"><span>Introducción a la Ingeniería </span><span>2</span></li>
-                <li class="plan__materia"><span>Lógica y Algoritmos I </span><span>3</span></li>
+                <li class="plan__materia"><span>Comunicación</span><span>2</span></li>
+                <li class="plan__materia"><span>Deporte y Cultura</span><span>2</span></li>
+                <li class="plan__materia"><span>Matemáticas I</span><span>3</span></li>
+                <li class="plan__materia"><span>Física I</span><span>3</span></li>
+                <li class="plan__materia"><span>Biología General</span><span>3</span></li>
+                <li class="plan__materia"><span>Introducción a la Ingeniería</span><span>2</span></li>
+                <li class="plan__materia"><span>Lógica y Algoritmos I</span><span>3</span></li>
               </ul>
               <p class="plan__total">Total créditos: 18</p>
             </div>
@@ -287,14 +272,14 @@
             <div class="plan__semestre">
               <h3 class="plan__titulo">Semestre 2</h3>
               <ul class="plan__materias">
-                <li class="plan__materia"><span>Constitución y Democracia </span><span>2</span></li>
-                <li class="plan__materia"><span>Matemáticas II </span><span>3</span></li>
-                <li class="plan__materia"><span>Física II </span><span>3</span></li>
-                <li class="plan__materia"><span>Química I </span><span>3</span></li>
-                <li class="plan__materia"><span>Lógica y Algoritmo II </span><span>3</span></li>
-                <li class="plan__materia"><span>Teoría General de Sistemas </span><span>3</span></li>
+                <li class="plan__materia"><span>Constitución y Democracia</span><span>2</span></li>
+                <li class="plan__materia"><span>Matemáticas II</span><span>3</span></li>
+                <li class="plan__materia"><span>Física II</span><span>3</span></li>
+                <li class="plan__materia"><span>Química I</span><span>3</span></li>
+                <li class="plan__materia"><span>Lógica y Algoritmos II</span><span>3</span></li>
+                <li class="plan__materia"><span>Teoría General de Sistemas</span><span>3</span></li>
               </ul>
-              <p class="plan__total">Total créditos: 18</p>
+              <p class="plan__total">Total créditos: 17</p>
             </div>
           </div>
 
@@ -302,11 +287,11 @@
             <div class="plan__semestre">
               <h3 class="plan__titulo">Semestre 3</h3>
               <ul class="plan__materias">
-                <li class="plan__materia"><span>Idioma Extranjero I </span><span>2</span></li>
-                <li class="plan__materia"><span>Algebra Lineal </span><span>3</span></li>
-                <li class="plan__materia"><span>Matemáticas Discreta </span><span>4</span></li>
-                <li class="plan__materia"><span>Análisis de Sistemas </span><span>4</span></li>
-                <li class="plan__materia"><span>Estructura de Datos I </span><span>4</span></li>
+                <li class="plan__materia"><span>Idioma Extranjero I</span><span>2</span></li>
+                <li class="plan__materia"><span>Álgebra Lineal</span><span>3</span></li>
+                <li class="plan__materia"><span>Matemáticas Discretas</span><span>4</span></li>
+                <li class="plan__materia"><span>Análisis de Sistemas</span><span>4</span></li>
+                <li class="plan__materia"><span>Estructura de Datos I</span><span>4</span></li>
               </ul>
               <p class="plan__total">Total créditos: 17</p>
             </div>
@@ -316,11 +301,11 @@
             <div class="plan__semestre">
               <h3 class="plan__titulo">Semestre 4</h3>
               <ul class="plan__materias">
-                <li class="plan__materia"><span>Ecuaciones Diferenciales </span><span>3</span></li>
-                <li class="plan__materia"><span>Estadística para Ingeniería </span><span>4</span></li>
-                <li class="plan__materia"><span>Ingeniería de Software I </span><span>4</span></li>
-                <li class="plan__materia"><span>Sistemas Operativos </span><span>3</span></li>
-                <li class="plan__materia"><span>Estructura de Datos II </span><span>4</span></li>
+                <li class="plan__materia"><span>Ecuaciones Diferenciales</span><span>3</span></li>
+                <li class="plan__materia"><span>Estadística para Ingeniería</span><span>4</span></li>
+                <li class="plan__materia"><span>Ingeniería de Software I</span><span>4</span></li>
+                <li class="plan__materia"><span>Sistemas Operativos</span><span>3</span></li>
+                <li class="plan__materia"><span>Estructura de Datos II</span><span>4</span></li>
               </ul>
               <p class="plan__total">Total créditos: 18</p>
             </div>
@@ -330,11 +315,11 @@
             <div class="plan__semestre">
               <h3 class="plan__titulo">Semestre 5</h3>
               <ul class="plan__materias">
-                <li class="plan__materia"><span>Idioma Extranjero II </span><span>2</span></li>
-                <li class="plan__materia"><span>Métodos Numéricos </span><span>4</span></li>
-                <li class="plan__materia"><span>Ingeniería de Software II </span><span>4</span></li>
-                <li class="plan__materia"><span>Programación Web </span><span>4</span></li>
-                <li class="plan__materia"><span>Diseño de Base de Datos </span><span>4</span></li>
+                <li class="plan__materia"><span>Idioma Extranjero II</span><span>2</span></li>
+                <li class="plan__materia"><span>Métodos Numéricos</span><span>4</span></li>
+                <li class="plan__materia"><span>Ingeniería de Software II</span><span>4</span></li>
+                <li class="plan__materia"><span>Programación Web</span><span>4</span></li>
+                <li class="plan__materia"><span>Diseño de Base de Datos</span><span>4</span></li>
               </ul>
               <p class="plan__total">Total créditos: 18</p>
             </div>
@@ -344,11 +329,11 @@
             <div class="plan__semestre">
               <h3 class="plan__titulo">Semestre 6</h3>
               <ul class="plan__materias">
-                <li class="plan__materia"><span>Filosofía e Historia de la Ciencia </span><span>2</span></li>
-                <li class="plan__materia"><span>Modelos Determinísticos </span><span>4</span></li>
-                <li class="plan__materia"><span>Ingeniería de Software III </span><span>4</span></li>
-                <li class="plan__materia"><span>Programación Móvil </span><span>4</span></li>
-                <li class="plan__materia"><span>Redes Informáticas I </span><span>4</span></li>
+                <li class="plan__materia"><span>Filosofía e Historia de la Ciencia</span><span>2</span></li>
+                <li class="plan__materia"><span>Modelos Determinísticos</span><span>4</span></li>
+                <li class="plan__materia"><span>Ingeniería de Software III</span><span>4</span></li>
+                <li class="plan__materia"><span>Programación Móvil</span><span>4</span></li>
+                <li class="plan__materia"><span>Redes Informáticas I</span><span>4</span></li>
               </ul>
               <p class="plan__total">Total créditos: 18</p>
             </div>
@@ -358,11 +343,11 @@
             <div class="plan__semestre">
               <h3 class="plan__titulo">Semestre 7</h3>
               <ul class="plan__materias">
-                <li class="plan__materia"><span>Metodología de la Investigación I </span><span>2</span></li>
-                <li class="plan__materia"><span>Proyectos Software </span><span>4</span></li>
-                <li class="plan__materia"><span>Inteligencia Computacional I </span><span>4</span></li>
-                <li class="plan__materia"><span>Redes Informáticas II </span><span>4</span></li>
-                <li class="plan__materia"><span>Administración de Base de Datos </span><span>4</span></li>
+                <li class="plan__materia"><span>Metodología de la Investigación I</span><span>2</span></li>
+                <li class="plan__materia"><span>Proyectos Software</span><span>4</span></li>
+                <li class="plan__materia"><span>Inteligencia Computacional I</span><span>4</span></li>
+                <li class="plan__materia"><span>Redes Informáticas II</span><span>4</span></li>
+                <li class="plan__materia"><span>Administración de Base de Datos</span><span>4</span></li>
               </ul>
               <p class="plan__total">Total créditos: 18</p>
             </div>
@@ -372,13 +357,13 @@
             <div class="plan__semestre">
               <h3 class="plan__titulo">Semestre 8</h3>
               <ul class="plan__materias">
-                <li class="plan__materia"><span>Desarrollo Humano </span><span>3</span></li>
-                <li class="plan__materia"><span>Metodología de la Investigación II </span><span>2</span></li>
-                <li class="plan__materia"><span>Planeación Estratégica de Sistemas de Información </span><span>4</span>
+                <li class="plan__materia"><span>Desarrollo Humano</span><span>3</span></li>
+                <li class="plan__materia"><span>Metodología de la Investigación II</span><span>2</span></li>
+                <li class="plan__materia"><span>Planeación Estratégica de Sistemas de Información</span><span>4</span>
                 </li>
-                <li class="plan__materia"><span>Inteligencia Computacional II </span><span>4</span></li>
-                <li class="plan__materia"><span>Taller de Emprendimiento e Innovación </span><span>3</span></li>
-                <li class="plan__materia"><span>Ética </span><span>2</span></li>
+                <li class="plan__materia"><span>Inteligencia Computacional II</span><span>4</span></li>
+                <li class="plan__materia"><span>Taller de Emprendimiento e Innovación</span><span>3</span></li>
+                <li class="plan__materia"><span>Ética</span><span>2</span></li>
               </ul>
               <p class="plan__total">Total créditos: 18</p>
             </div>
@@ -388,11 +373,11 @@
             <div class="plan__semestre">
               <h3 class="plan__titulo">Semestre 9</h3>
               <ul class="plan__materias">
-                <li class="plan__materia"><span>Universidad Región y Medio Ambiente </span><span>3</span></li>
-                <li class="plan__materia"><span>Gestión Tecnológica </span><span>3</span></li>
-                <li class="plan__materia"><span>Taller de Escritura Científica </span><span>4</span></li>
-                <li class="plan__materia"><span>Electiva I </span><span>4</span></li>
-                <li class="plan__materia"><span>Electia II </span><span>4</span></li>
+                <li class="plan__materia"><span>Universidad Región y Medio Ambiente</span><span>3</span></li>
+                <li class="plan__materia"><span>Gestión Tecnológica</span><span>3</span></li>
+                <li class="plan__materia"><span>Taller de Escritura Científica</span><span>4</span></li>
+                <li class="plan__materia"><span>Electiva I</span><span>4</span></li>
+                <li class="plan__materia"><span>Electiva II</span><span>4</span></li>
               </ul>
               <p class="plan__total">Total créditos: 18</p>
             </div>
@@ -402,37 +387,448 @@
             <div class="plan__semestre">
               <h3 class="plan__titulo">Semestre 10</h3>
               <ul class="plan__materias">
-                <li class="plan__materia"><span>Electiva III </span><span>4</span></li>
-                <li class="plan__materia"><span>Electiva IV </span><span>4</span></li>
-                <li class="plan__materia"><span>Opción de Grado </span><span>10</span></li>
+                <li class="plan__materia"><span>Electiva III</span><span>4</span></li>
+                <li class="plan__materia"><span>Electiva IV</span><span>4</span></li>
+                <li class="plan__materia"><span>Opción de Grado</span><span>10</span></li>
               </ul>
               <p class="plan__total">Total créditos: 18</p>
             </div>
           </div>
 
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev">
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#planCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="visually-hidden">Anterior</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#planCarousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="visually-hidden">Siguiente</span>
         </button>
+      </div>
+    </div>
+
+    <div class="presentacionDoc">
+      <div class="card" style="width: 18rem;">
+        <img src="img/Docente_Elio.png" class="card-img-top" alt="Docente">
+        <div class="card-body">
+          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
+          <p>Carrera docente - Tiempo completo</p>
+          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="img/Docente_Wilmer.png" class="card-img-top" alt="Docente">
+        <div class="card-body">
+          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
+          <p>Carrera docente - Tiempo completo</p>
+          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="img/Docente_Oscar.png" class="card-img-top" alt="Docente">
+        <div class="card-body">
+          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
+          <p>Carrera docente - Tiempo completo</p>
+          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="img/Docente_Diana.png" class="card-img-top" alt="Docente">
+        <div class="card-body">
+          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
+          <p>Carrera docente - Tiempo completo</p>
+          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="img/Docente_Fredy.png" class="card-img-top" alt="Docente">
+        <div class="card-body">
+          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
+          <p>Carrera docente - Tiempo completo</p>
+          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="img/Docente_Ruth.png" class="card-img-top" alt="Docente">
+        <div class="card-body">
+          <p class="card-text">RUTH DARY ESCOBAR SARRIA</p>
+          <p>Carrera docente - Tiempo completo</p>
+          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="img/Docente_Denis.png" class="card-img-top" alt="Docente">
+        <div class="card-body">
+          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
+          <p>Carrera docente - Tiempo completo</p>
+          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="img/Docente_Arley.png" class="card-img-top" alt="Docente">
+        <div class="card-body">
+          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
+          <p>Carrera docente - Tiempo completo</p>
+          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="img/Docente_Millán.png" class="card-img-top" alt="Docente">
+        <div class="card-body">
+          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
+          <p>Carrera docente - Tiempo completo</p>
+          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="img/Docente_Magola.png" class="card-img-top" alt="Docente">
+        <div class="card-body">
+          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
+          <p>Carrera docente - Tiempo completo</p>
+          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="img/Docente_Heriberto.png" class="card-img-top" alt="Docente">
+        <div class="card-body">
+          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
+          <p>Carrera docente - Tiempo completo</p>
+          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="img/Docente_Lina.png" class="card-img-top" alt="Docente">
+        <div class="card-body">
+          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
+          <p>Carrera docente - Tiempo completo</p>
+          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
+        </div>
       </div>
 
     </div>
-
   </main>
-  <footer>
 
+  <footer>
+    <section class="mapasitio">
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse__AtencionCiudano" aria-expanded="true"
+              aria-controls="collapse__AtencionCiudano">
+              Atención al Ciudadano
+            </button>
+          </h2>
+          <div id="collapse__AtencionCiudano" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  <a href="https://chaira.uniamazonia.edu.co/PQRSD/View/Public/PQRS/MenuPublicoPQRSD.aspx">PQRS-D</a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.uniamazonia.edu.co/Inicio/index.php/servicios-de-informacion/atencion-al-ciudadano/glosario.html">
+                    Glosario</a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.uniamazonia.edu.co/Inicio/index.php/servicios-de-informacion/preguntas-y-respuestas-frecuentes/relacionadas-con-campus-n-g.html">Preguntas
+                    Frecuentes</a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.funcionpublica.gov.co/dafpIndexerBT/tramite/index?find=FindNext&query=tramites+universidad+de+la+amazonia&filtroEntidad=0370&filtroSector=&filtroDepartamento=&filtroMunicipio=18001&bloquearFiltroEntidad=&bloquearFiltroSector=&bloquearFiltroDepartamento=&bloquearFiltroMunicipio=">Tramites
+                    Uniamazonia</a>
+                </li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/politica-de-privacidad.html">Política de
+                    Privacidad</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/politica-editorial.html">Política
+                    Editorial</a>
+                </li>
+                <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/mapa-de-sitio.html">Mapa del
+                    Sitio</a></li>
+                <li>
+                  <a
+                    href="https://www.uniamazonia.edu.co/Inicio/index.php/servicios-de-informacion/notificaciones-por-aviso.html">Notificaciones
+                    por Aviso</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse__AplicacionesWeb" aria-expanded="false"
+              aria-controls="collapse__AplicacionesWeb">
+              Aplicaciones Web
+            </button>
+          </h2>
+          <div id="collapse__AplicacionesWeb" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <ul>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-de-admision-registro-y-control-academico/118-inscripciones.html">Inscripciones
+                    (Pregrado y Posgrado</a>)</li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/7154-liquidacion.html">Liquidación</a>
+                </li>
+                <li><a href="https://uniamazonia.janium.net/janium-bin/busqueda_rapida.pl?Id=20250916142206">Catálogo
+                    en Línea (OPAC)</a></li>
+                <li><a href="https://chaira.uniamazonia.edu.co/sigepi/Default.aspx">SIGEPI</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse__InformacionInstitucinal" aria-expanded="false"
+              aria-controls="collapse__InformacionInstitucinal">
+              Información Institucional
+            </button>
+          </h2>
+          <div id="collapse__InformacionInstitucinal" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <ul>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/normativa/estatutos/2016-01-13-21-40-16.html">Estatuto
+                    General</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/normativa/estatutos/2016-01-13-21-34-14.html">Estatuto
+                    Docente</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/la-universidad/normativa/estatutos/2013-11-01-16-33-57.html">Estatuto
+                    Estudiantil</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/gestion-institucional/contratacion/estatuto-de-contratacion.html">Estatuto
+                    de Contratación</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/normativa/estatutos/estatuto-de-biblioteca.html">Estatuto
+                    de Biblioteca</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/normativa/estatutos/estatuto-del-investigador.html">Estatuto
+                    del Investigador</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/normativa/estatutos/estatuto-electoral.html">Estatuto
+                    de Electoral</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/normativa/estatutos/estatuto-presupuestal.html">Estatuto
+                    de Presupuestal</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/normativa/estatutos/estatuto-de-posgrados.html">Estatuto
+                    de Posgrados</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Superior/Acuerdos/2023/Acuerdo%20085%20-%20Actualizacion%20Politica%20Modelo%20de%20Bienestar%20Universitario.pdf">Políticas
+                    de Bienestar Universitario</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse__Servicios" aria-expanded="false" aria-controls="collapse__Servicios">
+              Servicios
+            </button>
+          </h2>
+          <div id="collapse__Servicios" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <ul>
+                <li><a href="https://uniamazonia.gestionjuridica.com/au/cjv">Consultorio Jurídico y Centro de
+                    Conciliación Virtual</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-biblioteca-e-informacion-cientifica/190-direccion-biblioteca-e-informacion-cientifica.html">Biblioteca</a>
+                </li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/investigacion/editorial.html">Editorial
+                    Uniamazonia</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/investigacion/unidades-de-apoyo-a-la-investigacion/69-consultorio-contable-tributario.html">Consultorio
+                    Contable Tributario</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/presentacion-sobre-el-naf.html">Núcleos
+                    de Apoyo Contable y Fiscal (NAF)</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/vicerrectorias/vicerrectoria-de-investigaciones-e-innovacion/87-u-de-apoyo/consultorio-juridico.html">Consultorio
+                    Jurídico</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/vicerrectorias/vicerrectoria-de-investigaciones-e-innovacion/86-u-de-apoyo/centro-de-conciliacion/171-centro-de-conciliacion.html">Centro
+                    de Conciliación</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/otras-dependencias/centro-de-idiomas.html">Centro
+                    de Idiomas</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/otras-dependencias/unidad-de-emprendimiento.html">Unidad
+                    de Emprendimiento</a></li>
+                <li><a
+                    href="https://chaira.uniamazonia.edu.co/GestionProveedores/Vistas/Privado/Inicio.aspx">Proveedores</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse__DescubreUniversidad" aria-expanded="false"
+              aria-controls="collapse__DescubreUniversidad">
+              Descubre la Universidad
+            </button>
+          </h2>
+          <div id="collapse__DescubreUniversidad" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <ul>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/normativa/marco-juridico.html">Marco
+                    Jurídico</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/gestion-institucional/control-y-rendicion-de-cuentas/informe-de-rendicion-de-cuentas.html">Rendición
+                    de Cuentas</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/documentos/docs/Oficina%20Asesora%20de%20Planeacion/Plan%20de%20Desarrollo%20Institucional/PDI%202020%20-2029.pdf">Plan
+                    de Desarrollo PDI</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/transparencia.html">Transparencia
+                    y Acceso a la Información</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/2023-06-13-15-58-39/6-participa.html">Participa</a>
+                </li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/2023-06-13-15-58-39/grupos-de-interes/portal-para-ninos.html">Portal
+                    para niños</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/Inicio/index.php/convocatorias/ofertas-de-empleo.html">Ofertas
+                    de Empleo</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse__Programas" aria-expanded="false" aria-controls="collapse__Programas">
+              Programas
+            </button>
+          </h2>
+          <div id="collapse__Programas" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <ul>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/programas/pregrado.html">Pregrados</a></li>
+                <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/programas/posgrado.html">Posgrados</a></li>
+                <li><a href="https://chaira.uniamazonia.edu.co/AcademicoV3/Vistas/Publico/Evento/Evento.aspx">Educación
+                    Continuada</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-de-admision-registro-y-control-academico/233-calendario-academico/35-cuales-son-las-fechas-academicas-mas-importantes-de-cada-semestre.html">Calendario
+                    Académico</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-de-admision-registro-y-control-academico.html">Admisiones
+                    y Registro</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/normativa/valores-de-matriculas-y-derechos-pecuniarios-y-complementarios.html">Tarifas
+                    / Derechos Pecuniarios</a></li>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-de-admision-registro-y-control-academico/228-aspirantes/2839-instructivos-de-los-procesos-academicos.html">Instructivo
+                    - Procesos Académicos</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse__DondeEstamos" aria-expanded="false" aria-controls="collapse__DondeEstamos">
+              Donde Estamos
+            </button>
+          </h2>
+          <div id="collapse__DondeEstamos" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <ul>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/presentacion/datos-de-contacto-sedes.html">Programas
+                    en otras ciudades</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="enlacesFin">
+      <div class="enlacesFin__titulo">UNIVERSIDAD DE LA AMAZONIA</div>
+      <div class="enlacesFin__interes">
+        <p>ENLACES DE INTERÉS</p>
+        <ul>
+          <li><a
+              href="https://www.uniamazonia.edu.co/documentos/docs/Oficina%20Asesora%20de%20Planeacion/Plan%20de%20Desarrollo%20Institucional/PDI%202020%20-2029.pdf">Plan
+              de Desarrollo Institucional</a></li>
+          <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/2013-08-14-20-35-02.html">Ofertas de Salas y
+              Vehículos</a></li>
+          <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/politica-de-privacidad.html">Política de
+              Privacidad</a></li>
+          <li><a
+              href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Superior/Acuerdos/2023/Acuerdo%20001%20-%20Por%20el%20cual%20se%20modifica%20de%20forma%20parcial%20el%20Estatuto%20de%20Propiedad%20Intelectual%20de%20la%20Universidad%20de%20la%20Amazonia.pdf">Política
+              de Derechos de Autor</a></li>
+          <li><a
+              href="https://www.uniamazonia.edu.co/documentos/docs/Departamento%20de%20Tecnologias%20de%20la%20Informacion/Guias%20para%20los%20usuarios/Terminos%20y%20condiciones%20del%20sitio%20web%202025.pdf">Términos
+              y condiciones</a></li>
+          <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/mapa-de-sitio.html">Mapa del
+              sitio</a></li>
+
+        </ul>
+      </div>
+
+      <div class="enlacesFin__contactanos">
+        <p>CONTÁCTANOS</p>
+        <p>Sede Porvenir Calle 17 Diagonal 17 con Carrera 3F - Barrio Porvenir -
+          <a
+            href="https://www.uniamazonia.edu.co/inicio/index.php/es/programas/pregrado/ingenieria/ingenieria-de-sistemas.html#">Florencia,
+            Caquetá, Colombia, Suramérica</a>
+        </p>
+        <p>Atención Público: Lunes a Viernes de 7:30 a.m. a 11:30 m. - 1:30 p.m. a 5:30 p.m.</p>
+        <p>Contacto: <a href="mailto:atencionalciudadano@uniamazonia.edu.co">atencionalciudadano@uniamazonia.edu.co</a>
+        </p>
+        <p>PQRS-D: <a href="mailto:quejasyreclamos@uniamazonia.edu.co">quejasyreclamos@uniamazonia.edu.co</a></p>
+        <p>Notificaciones judiciales: <a href="mailto:njudiciales@uniamazonia.edu.co">njudiciales@uniamazonia.edu.co</a>
+        </p>
+      </div>
+
+      <div class="enlacesFin__redes">
+        <ul>
+          <li><a href="https://www.facebook.com/uniamazonia.edu.co"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/uniamazonia/"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://x.com/uniamazonia"><i class="bi bi-twitter-x"></i></a></li>
+          <li><a href="https://www.youtube.com/c/uamazonia"><i class="bi bi-youtube"></i></a></li>
+          <li><a href="https://www.tiktok.com/@uniamazonia"><i class="bi bi-tiktok"></i></a></li>
+          <li>@uniamazonia</li>
+        </ul>
+      </div>
+
+      <div class="enlacesFin__localizacion">
+        <p>LOCALIZACIÓN FÍSICA</p>
+        <a href="/inicio/index.php/es/la-universidad/presentacion/localizacion-fisica.html"><img
+            src="https://www.uniamazonia.edu.co/inicio/images/banners/2024/Actualizaci%C3%B3n/Botones/Mapa.JPG"
+            alt="mapa uni amazonia"></a>
+      </div>
+    </section>
 
   </footer>
 
-
-  <script src="Js/bootstrap.bundle.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
