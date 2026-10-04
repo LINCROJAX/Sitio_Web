@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ingeniería de Sistemas - Universidad de la Amazonia</title>
+  <link rel="shortcut icon" href="img/LogoU.png" type="image/png">
   <link rel="stylesheet" href="style/bootstrap.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style/style.css">
@@ -16,8 +17,78 @@
       <img class="header__logo" src="img/Logouniamazonia.png" alt="Universidad de la Amazonia">
     </a>
     <button class="header__search" type="button" aria-label="Buscar"><i class="bi bi-search"></i></button>
-    <button class="header__menu" type="button" aria-label="Abrir menú"><i class="bi bi-list"></i></button>
+    <button class="header__menu" type="button" aria-label="Abrir menú" data-bs-toggle="offcanvas"
+      data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"><i class="bi bi-list"></i></button>
   </header>
+
+  <div class="menu offcanvas offcanvas-end" tabindex="-1" id="menuPrincipal" aria-labelledby="menuTitulo">
+    <div class="menu__barra">
+      <h2 class="menu__marca" id="menuTitulo">
+        <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/">Universidad de la Amazonia</a>
+      </h2>
+      <div class="menu__acciones">
+        <button class="menu__accion menu__accion--buscar" type="button">
+          <i class="bi bi-search"></i><span>Buscar</span>
+        </button>
+        <button class="menu__accion menu__accion--cerrar" type="button" data-bs-dismiss="offcanvas">
+          <i class="bi bi-x-lg"></i><span>Cerrar</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="menu__cuerpo">
+      <nav class="menu__principal" aria-label="Menú principal">
+        <ul class="menu__lista">
+          <li><a class="menu__enlace"
+              href="https://www.uniamazonia.edu.co/inicio/index.php/programas/pregrado.html">Programas</a></li>
+          <li><a class="menu__enlace"
+              href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/mapa-de-sitio.html">La
+              universidad</a></li>
+          <li><a class="menu__enlace"
+              href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/mapa-de-sitio.html">Investigación</a>
+          </li>
+          <li><a class="menu__enlace"
+              href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/mapa-de-sitio.html">Gestión</a></li>
+          <li><a class="menu__enlace"
+              href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/mapa-de-sitio.html">Servicios</a>
+          </li>
+          <li><a class="menu__enlace"
+              href="https://www.uniamazonia.edu.co/Inicio/index.php/convocatorias/ofertas-de-empleo.html">Convocatorias</a>
+          </li>
+          <li><a class="menu__enlace"
+              href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/presentacion/datos-de-contacto-sedes.html">Sedes</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="menu__lateral">
+        <h3 class="menu__subtitulo">Más información</h3>
+        <ul class="menu__secundaria">
+          <li><a
+              href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/transparencia.html">Transparencia</a>
+          </li>
+          <li><a
+              href="https://www.uniamazonia.edu.co/inicio/index.php/es/2023-06-13-15-58-39/6-participa.html">Participa</a>
+          </li>
+          <li><a
+              href="https://www.uniamazonia.edu.co/Inicio/index.php/servicios-de-informacion/atencion-al-ciudadano/glosario.html">Atención
+              al ciudadano</a></li>
+        </ul>
+
+        <ul class="menu__botones">
+          <li><a class="menu__boton"
+              href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-de-admision-registro-y-control-academico/118-inscripciones.html">Inscripciones
+              <i class="bi bi-arrow-up-right"></i></a></li>
+          <li><a class="menu__boton"
+              href="https://chaira.uniamazonia.edu.co/PQRSD/View/Public/PQRS/MenuPublicoPQRSD.aspx">PQRS-D <i
+                class="bi bi-arrow-up-right"></i></a></li>
+          <li><a class="menu__boton"
+              href="https://www.uniamazonia.edu.co/Inicio/index.php/convocatorias/ofertas-de-empleo.html">Ofertas de
+              empleo <i class="bi bi-arrow-up-right"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <main>
     <div class="main__contenedorCarr">
@@ -41,11 +112,11 @@
     </nav>
 
     <div class="info">
-      <p>Código SNIES: 52384</p>
-      <p>Créditos: 178</p>
-      <p>Modalidad: Presencial</p>
-      <p>Jornada: Diurna</p>
-      <p>Duración: 10 semestres</p>
+      <p><span>Código SNIES:</span>52384</p>
+      <p><span>Créditos:</span>178</p>
+      <p><span>Modalidad:</span>Presencial</p>
+      <p><span>Jornada:</span>Diurna</p>
+      <p><span>Duración:</span>10 semestres</p>
     </div>
 
     <div class="fundamento">
@@ -112,6 +183,7 @@
 
         <div class="tab-pane fade" id="proposito" role="tabpanel" tabindex="0">
           <p>Propósito de formación del programa</p>
+
           <p>El Programa Ingeniería de Sistemas de la Universidad de la Amazonia, tiene como principal propósito,
             desarrollar procesos de formación integral de profesionales de la Ingeniería de Sistemas, mediante el
             desarrollo de un currículo que aborda los conocimientos propios de las ciencias básicas, la ingeniería, el
@@ -124,6 +196,7 @@
 
         <div class="tab-pane fade" id="perfil" role="tabpanel" tabindex="0">
           <p>Perfil de egreso</p>
+
           <p>El Ingeniero de Sistemas de la Universidad de la Amazonia es un profesional que comprende las dinámicas del
             entorno, reconociendo las implicaciones y las responsabilidades legales, profesionales, éticas, sociales,
             económicas y culturales del ejercicio de su profesión. Así mismo, reconoce que la evolución constante de su
@@ -408,203 +481,192 @@
       </div>
     </div>
 
-    <div class="presentacionDoc">
-      <div class="card" style="width: 18rem;">
-        <img src="img/Docente_Elio.png" class="card-img-top" alt="Docente">
-        <div class="card-body">
-          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
-          <p>Carrera docente - Tiempo completo</p>
-          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
-        </div>
-      </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="img/Docente_Wilmer.png" class="card-img-top" alt="Docente">
-        <div class="card-body">
-          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
-          <p>Carrera docente - Tiempo completo</p>
-          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
-        </div>
-      </div>
+    <section class="docentes" aria-labelledby="docentes-titulo">
+      <h2 class="main__subtitulo" id="docentes-titulo">Docentes</h2>
+      <ul class="docentes__lista">
+        <li class="docente">
+          <img class="docente__foto" src="img/Docente_Elio.png" alt="" loading="lazy">
+          <div class="docente__datos">
+            <h3 class="docente__nombre">Elio Fabio Sánchez Trujillo</h3>
+            <p class="docente__vinculacion">Carrera docente · Tiempo completo</p>
+            <a class="docente__correo" href="mailto:elio.sanchez@udla.edu.co"><i class="bi bi-envelope"></i>
+              elio.sanchez@udla.edu.co</a>
+          </div>
+        </li>
+        <li class="docente">
+          <img class="docente__foto" src="img/Docente_Wilmer.png" alt="" loading="lazy">
+          <div class="docente__datos">
+            <h3 class="docente__nombre">Wilmer Arley Patiño Perdomo</h3>
+            <p class="docente__vinculacion">Carrera docente · Tiempo completo</p>
+            <a class="docente__correo" href="mailto:w.patino@udla.edu.co"><i class="bi bi-envelope"></i>
+              w.patino@udla.edu.co</a>
+          </div>
+        </li>
+        <li class="docente">
+          <img class="docente__foto" src="img/Docente_Oscar.png" alt="" loading="lazy">
+          <div class="docente__datos">
+            <h3 class="docente__nombre">Oscar Fabian Patiño Perdomo</h3>
+            <p class="docente__vinculacion">Docente ocasional · Tiempo completo</p>
+            <a class="docente__correo" href="mailto:o.patino@udla.edu.co"><i class="bi bi-envelope"></i>
+              o.patino@udla.edu.co</a>
+          </div>
+        </li>
+        <li class="docente">
+          <img class="docente__foto" src="img/Docente_Diana.png" alt="" loading="lazy">
+          <div class="docente__datos">
+            <h3 class="docente__nombre">Diana Maria Espinosa Sarmiento</h3>
+            <p class="docente__vinculacion">Docente ocasional · Tiempo completo</p>
+            <a class="docente__correo" href="mailto:di.espinosa@udla.edu.co"><i class="bi bi-envelope"></i>
+              di.espinosa@udla.edu.co</a>
+          </div>
+        </li>
+        <li class="docente">
+          <img class="docente__foto" src="img/Docente_Fredy.png" alt="" loading="lazy">
+          <div class="docente__datos">
+            <h3 class="docente__nombre">Fredy Antonio Verástegui González</h3>
+            <p class="docente__vinculacion">Carrera docente · Tiempo completo</p>
+            <a class="docente__correo" href="mailto:f.verastegui@udla.edu.co"><i class="bi bi-envelope"></i>
+              f.verastegui@udla.edu.co</a>
+          </div>
+        </li>
+        <li class="docente">
+          <img class="docente__foto" src="img/Docente_Ruth.png" alt="" loading="lazy">
+          <div class="docente__datos">
+            <h3 class="docente__nombre">Ruth Dary Escobar Sarria</h3>
+            <p class="docente__vinculacion">Carrera docente · Tiempo completo</p>
+            <a class="docente__correo" href="mailto:r.escobar@udla.edu.co"><i class="bi bi-envelope"></i>
+              r.escobar@udla.edu.co</a>
+          </div>
+        </li>
+        <li class="docente">
+          <img class="docente__foto" src="img/Docente_Denis.png" alt="" loading="lazy">
+          <div class="docente__datos">
+            <h3 class="docente__nombre">Denis Lorena Alvarez Guayara</h3>
+            <p class="docente__vinculacion">Docente ocasional · Tiempo completo</p>
+            <a class="docente__correo" href="mailto:d.alvarez@udla.edu.co"><i class="bi bi-envelope"></i>
+              d.alvarez@udla.edu.co</a>
+          </div>
+        </li>
+        <li class="docente">
+          <img class="docente__foto" src="img/Docente_Arley.png" alt="" loading="lazy">
+          <div class="docente__datos">
+            <h3 class="docente__nombre">John Arley Garcia Quintero</h3>
+            <p class="docente__vinculacion">Docente ocasional · Tiempo completo</p>
+            <a class="docente__correo" href="mailto:j.garcia@udla.edu.co"><i class="bi bi-envelope"></i>
+              j.garcia@udla.edu.co</a>
+          </div>
+        </li>
+        <li class="docente">
+          <img class="docente__foto" src="img/Docente_Millán.png" alt="" loading="lazy">
+          <div class="docente__datos">
+            <h3 class="docente__nombre">Edwin Eduardo Millán Rojas</h3>
+            <p class="docente__vinculacion">Carrera docente · Tiempo completo</p>
+            <a class="docente__correo" href="mailto:e.millan@udla.edu.co"><i class="bi bi-envelope"></i>
+              e.millan@udla.edu.co</a>
+          </div>
+        </li>
+        <li class="docente">
+          <img class="docente__foto" src="img/Docente_Magola.png" alt="" loading="lazy">
+          <div class="docente__datos">
+            <h3 class="docente__nombre">Magola Hermida Herrera</h3>
+            <p class="docente__vinculacion">Docente ocasional · Tiempo completo</p>
+            <a class="docente__correo" href="mailto:m.hermida@udla.edu.co"><i class="bi bi-envelope"></i>
+              m.hermida@udla.edu.co</a>
+          </div>
+        </li>
+        <li class="docente">
+          <img class="docente__foto" src="img/Docente_Heriberto.png" alt="" loading="lazy">
+          <div class="docente__datos">
+            <h3 class="docente__nombre">Heriberto Fernando Vargas Losada</h3>
+            <p class="docente__vinculacion">Docente ocasional · Tiempo completo</p>
+            <a class="docente__correo" href="mailto:heri.vargas@udla.edu.co"><i class="bi bi-envelope"></i>
+              heri.vargas@udla.edu.co</a>
+          </div>
+        </li>
+        <li class="docente">
+          <img class="docente__foto" src="img/Docente_Lina.png" alt="" loading="lazy">
+          <div class="docente__datos">
+            <h3 class="docente__nombre">Lina Saza Bustos</h3>
+            <p class="docente__vinculacion">Docente ocasional · Tiempo completo</p>
+            <a class="docente__correo" href="mailto:l.saza@udla.edu.co"><i class="bi bi-envelope"></i>
+              l.saza@udla.edu.co</a>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-      <div class="card" style="width: 18rem;">
-        <img src="img/Docente_Oscar.png" class="card-img-top" alt="Docente">
-        <div class="card-body">
-          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
-          <p>Carrera docente - Tiempo completo</p>
-          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="img/Docente_Diana.png" class="card-img-top" alt="Docente">
-        <div class="card-body">
-          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
-          <p>Carrera docente - Tiempo completo</p>
-          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="img/Docente_Fredy.png" class="card-img-top" alt="Docente">
-        <div class="card-body">
-          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
-          <p>Carrera docente - Tiempo completo</p>
-          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="img/Docente_Ruth.png" class="card-img-top" alt="Docente">
-        <div class="card-body">
-          <p class="card-text">RUTH DARY ESCOBAR SARRIA</p>
-          <p>Carrera docente - Tiempo completo</p>
-          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="img/Docente_Denis.png" class="card-img-top" alt="Docente">
-        <div class="card-body">
-          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
-          <p>Carrera docente - Tiempo completo</p>
-          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="img/Docente_Arley.png" class="card-img-top" alt="Docente">
-        <div class="card-body">
-          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
-          <p>Carrera docente - Tiempo completo</p>
-          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="img/Docente_Millán.png" class="card-img-top" alt="Docente">
-        <div class="card-body">
-          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
-          <p>Carrera docente - Tiempo completo</p>
-          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="img/Docente_Magola.png" class="card-img-top" alt="Docente">
-        <div class="card-body">
-          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
-          <p>Carrera docente - Tiempo completo</p>
-          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="img/Docente_Heriberto.png" class="card-img-top" alt="Docente">
-        <div class="card-body">
-          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
-          <p>Carrera docente - Tiempo completo</p>
-          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="img/Docente_Lina.png" class="card-img-top" alt="Docente">
-        <div class="card-body">
-          <p class="card-text">ELIO FABIO SÁNCHEZ TRUJILLO</p>
-          <p>Carrera docente - Tiempo completo</p>
-          <p>Correo: <a href="mailto:elio.sanchez@udla.edu.co">elio.sanchez@udla.edu.co</a></p>
-        </div>
-      </div>
-
-    </div>
   </main>
 
   <footer>
-    <section class="mapasitio">
-
-      <div class="accordion">
+    <nav class="mapasitio" aria-label="Mapa del sitio de la universidad">
+      <div class="accordion accordion-flush mapasitio__acordeon">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse__AtencionCiudano" aria-expanded="true"
-              aria-controls="collapse__AtencionCiudano">
-              Atención al Ciudadano
-            </button>
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#f-AtencionCiudadano" aria-expanded="false" aria-controls="f-AtencionCiudadano">Atención
+              al ciudadano</button>
           </h2>
-          <div id="collapse__AtencionCiudano" class="accordion-collapse collapse show">
+          <div id="f-AtencionCiudadano" class="accordion-collapse collapse">
             <div class="accordion-body">
-              <ul>
-                <li>
-                  <a href="https://chaira.uniamazonia.edu.co/PQRSD/View/Public/PQRS/MenuPublicoPQRSD.aspx">PQRS-D</a>
+              <ul class="mapasitio__lista">
+                <li><a href="https://chaira.uniamazonia.edu.co/PQRSD/View/Public/PQRS/MenuPublicoPQRSD.aspx">PQRS-D</a>
                 </li>
-                <li>
-                  <a
-                    href="https://www.uniamazonia.edu.co/Inicio/index.php/servicios-de-informacion/atencion-al-ciudadano/glosario.html">
-                    Glosario</a>
+                <li><a
+                    href="https://www.uniamazonia.edu.co/Inicio/index.php/servicios-de-informacion/atencion-al-ciudadano/glosario.html">Glosario</a>
                 </li>
-                <li>
-                  <a
+                <li><a
                     href="https://www.uniamazonia.edu.co/Inicio/index.php/servicios-de-informacion/preguntas-y-respuestas-frecuentes/relacionadas-con-campus-n-g.html">Preguntas
-                    Frecuentes</a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.funcionpublica.gov.co/dafpIndexerBT/tramite/index?find=FindNext&query=tramites+universidad+de+la+amazonia&filtroEntidad=0370&filtroSector=&filtroDepartamento=&filtroMunicipio=18001&bloquearFiltroEntidad=&bloquearFiltroSector=&bloquearFiltroDepartamento=&bloquearFiltroMunicipio=">Tramites
-                    Uniamazonia</a>
-                </li>
+                    frecuentes</a></li>
+                <li><a
+                    href="https://www.funcionpublica.gov.co/dafpIndexerBT/tramite/index?find=FindNext&amp;query=tramites+universidad+de+la+amazonia&amp;filtroEntidad=0370&amp;filtroSector=&amp;filtroDepartamento=&amp;filtroMunicipio=18001&amp;bloquearFiltroEntidad=&amp;bloquearFiltroSector=&amp;bloquearFiltroDepartamento=&amp;bloquearFiltroMunicipio=">Trámites
+                    Uniamazonia</a></li>
                 <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/politica-de-privacidad.html">Política de
-                    Privacidad</a></li>
+                    privacidad</a></li>
                 <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/politica-editorial.html">Política
-                    Editorial</a>
-                </li>
+                    editorial</a></li>
                 <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/mapa-de-sitio.html">Mapa del
-                    Sitio</a></li>
-                <li>
-                  <a
+                    sitio</a></li>
+                <li><a
                     href="https://www.uniamazonia.edu.co/Inicio/index.php/servicios-de-informacion/notificaciones-por-aviso.html">Notificaciones
-                    por Aviso</a>
-                </li>
-
+                    por aviso</a></li>
               </ul>
             </div>
           </div>
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse__AplicacionesWeb" aria-expanded="false"
-              aria-controls="collapse__AplicacionesWeb">
-              Aplicaciones Web
-            </button>
+              data-bs-target="#f-AplicacionesWeb" aria-expanded="false" aria-controls="f-AplicacionesWeb">Aplicaciones
+              web</button>
           </h2>
-          <div id="collapse__AplicacionesWeb" class="accordion-collapse collapse">
+          <div id="f-AplicacionesWeb" class="accordion-collapse collapse">
             <div class="accordion-body">
-              <ul>
+              <ul class="mapasitio__lista">
                 <li><a
                     href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-de-admision-registro-y-control-academico/118-inscripciones.html">Inscripciones
-                    (Pregrado y Posgrado</a>)</li>
+                    (Pregrado y Posgrado)</a></li>
                 <li><a
                     href="https://www.uniamazonia.edu.co/inicio/index.php/es/servicios-de-informacion/noticias-y-eventos/117-academia/7154-liquidacion.html">Liquidación</a>
                 </li>
-                <li><a href="https://uniamazonia.janium.net/janium-bin/busqueda_rapida.pl?Id=20250916142206">Catálogo
-                    en Línea (OPAC)</a></li>
+                <li><a href="https://uniamazonia.janium.net/janium-bin/busqueda_rapida.pl?Id=20250916142206">Catálogo en
+                    línea (OPAC)</a></li>
                 <li><a href="https://chaira.uniamazonia.edu.co/sigepi/Default.aspx">SIGEPI</a></li>
               </ul>
             </div>
           </div>
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse__InformacionInstitucinal" aria-expanded="false"
-              aria-controls="collapse__InformacionInstitucinal">
-              Información Institucional
-            </button>
+              data-bs-target="#f-InformacionInstitucional" aria-expanded="false"
+              aria-controls="f-InformacionInstitucional">Información institucional</button>
           </h2>
-          <div id="collapse__InformacionInstitucinal" class="accordion-collapse collapse">
+          <div id="f-InformacionInstitucional" class="accordion-collapse collapse">
             <div class="accordion-body">
-              <ul>
+              <ul class="mapasitio__lista">
                 <li><a
                     href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/normativa/estatutos/2016-01-13-21-40-16.html">Estatuto
                     General</a></li>
@@ -625,10 +687,10 @@
                     del Investigador</a></li>
                 <li><a
                     href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/normativa/estatutos/estatuto-electoral.html">Estatuto
-                    de Electoral</a></li>
+                    Electoral</a></li>
                 <li><a
                     href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/normativa/estatutos/estatuto-presupuestal.html">Estatuto
-                    de Presupuestal</a></li>
+                    Presupuestal</a></li>
                 <li><a
                     href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/normativa/estatutos/estatuto-de-posgrados.html">Estatuto
                     de Posgrados</a></li>
@@ -639,16 +701,15 @@
             </div>
           </div>
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse__Servicios" aria-expanded="false" aria-controls="collapse__Servicios">
-              Servicios
-            </button>
+              data-bs-target="#f-Servicios" aria-expanded="false" aria-controls="f-Servicios">Servicios</button>
           </h2>
-          <div id="collapse__Servicios" class="accordion-collapse collapse">
+          <div id="f-Servicios" class="accordion-collapse collapse">
             <div class="accordion-body">
-              <ul>
+              <ul class="mapasitio__lista">
                 <li><a href="https://uniamazonia.gestionjuridica.com/au/cjv">Consultorio Jurídico y Centro de
                     Conciliación Virtual</a></li>
                 <li><a
@@ -676,34 +737,32 @@
                 <li><a
                     href="https://chaira.uniamazonia.edu.co/GestionProveedores/Vistas/Privado/Inicio.aspx">Proveedores</a>
                 </li>
-
               </ul>
             </div>
           </div>
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse__DescubreUniversidad" aria-expanded="false"
-              aria-controls="collapse__DescubreUniversidad">
-              Descubre la Universidad
-            </button>
+              data-bs-target="#f-DescubreUniversidad" aria-expanded="false"
+              aria-controls="f-DescubreUniversidad">Descubre la universidad</button>
           </h2>
-          <div id="collapse__DescubreUniversidad" class="accordion-collapse collapse">
+          <div id="f-DescubreUniversidad" class="accordion-collapse collapse">
             <div class="accordion-body">
-              <ul>
+              <ul class="mapasitio__lista">
                 <li><a
                     href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/normativa/marco-juridico.html">Marco
-                    Jurídico</a></li>
+                    jurídico</a></li>
                 <li><a
                     href="https://www.uniamazonia.edu.co/inicio/index.php/gestion-institucional/control-y-rendicion-de-cuentas/informe-de-rendicion-de-cuentas.html">Rendición
-                    de Cuentas</a></li>
+                    de cuentas</a></li>
                 <li><a
                     href="https://www.uniamazonia.edu.co/documentos/docs/Oficina%20Asesora%20de%20Planeacion/Plan%20de%20Desarrollo%20Institucional/PDI%202020%20-2029.pdf">Plan
                     de Desarrollo PDI</a></li>
                 <li><a
                     href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/transparencia.html">Transparencia
-                    y Acceso a la Información</a></li>
+                    y acceso a la información</a></li>
                 <li><a
                     href="https://www.uniamazonia.edu.co/inicio/index.php/es/2023-06-13-15-58-39/6-participa.html">Participa</a>
                 </li>
@@ -712,51 +771,50 @@
                     para niños</a></li>
                 <li><a
                     href="https://www.uniamazonia.edu.co/Inicio/index.php/convocatorias/ofertas-de-empleo.html">Ofertas
-                    de Empleo</a></li>
+                    de empleo</a></li>
               </ul>
             </div>
           </div>
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse__Programas" aria-expanded="false" aria-controls="collapse__Programas">
-              Programas
-            </button>
+              data-bs-target="#f-Programas" aria-expanded="false" aria-controls="f-Programas">Programas</button>
           </h2>
-          <div id="collapse__Programas" class="accordion-collapse collapse">
+          <div id="f-Programas" class="accordion-collapse collapse">
             <div class="accordion-body">
-              <ul>
+              <ul class="mapasitio__lista">
                 <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/programas/pregrado.html">Pregrados</a></li>
                 <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/programas/posgrado.html">Posgrados</a></li>
                 <li><a href="https://chaira.uniamazonia.edu.co/AcademicoV3/Vistas/Publico/Evento/Evento.aspx">Educación
-                    Continuada</a></li>
+                    continuada</a></li>
                 <li><a
                     href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-de-admision-registro-y-control-academico/233-calendario-academico/35-cuales-son-las-fechas-academicas-mas-importantes-de-cada-semestre.html">Calendario
-                    Académico</a></li>
+                    académico</a></li>
                 <li><a
                     href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-de-admision-registro-y-control-academico.html">Admisiones
-                    y Registro</a></li>
+                    y registro</a></li>
                 <li><a
                     href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/normativa/valores-de-matriculas-y-derechos-pecuniarios-y-complementarios.html">Tarifas
-                    / Derechos Pecuniarios</a></li>
+                    / Derechos pecuniarios</a></li>
                 <li><a
                     href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-de-admision-registro-y-control-academico/228-aspirantes/2839-instructivos-de-los-procesos-academicos.html">Instructivo
-                    - Procesos Académicos</a></li>
+                    - Procesos académicos</a></li>
               </ul>
             </div>
           </div>
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse__DondeEstamos" aria-expanded="false" aria-controls="collapse__DondeEstamos">
-              Donde Estamos
-            </button>
+              data-bs-target="#f-DondeEstamos" aria-expanded="false" aria-controls="f-DondeEstamos">Dónde
+              estamos</button>
           </h2>
-          <div id="collapse__DondeEstamos" class="accordion-collapse collapse">
+          <div id="f-DondeEstamos" class="accordion-collapse collapse">
             <div class="accordion-body">
-              <ul>
+              <ul class="mapasitio__lista">
                 <li><a
                     href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/presentacion/datos-de-contacto-sedes.html">Programas
                     en otras ciudades</a></li>
@@ -765,67 +823,69 @@
           </div>
         </div>
       </div>
+    </nav>
 
-    </section>
+    <div class="enlacesFin">
+      <p class="enlacesFin__titulo">Universidad de la Amazonia</p>
 
-    <section class="enlacesFin">
-      <div class="enlacesFin__titulo">UNIVERSIDAD DE LA AMAZONIA</div>
       <div class="enlacesFin__interes">
-        <p>ENLACES DE INTERÉS</p>
-        <ul>
+        <h2 class="enlacesFin__subtitulo">Enlaces de interés</h2>
+        <ul class="enlacesFin__lista">
           <li><a
               href="https://www.uniamazonia.edu.co/documentos/docs/Oficina%20Asesora%20de%20Planeacion/Plan%20de%20Desarrollo%20Institucional/PDI%202020%20-2029.pdf">Plan
               de Desarrollo Institucional</a></li>
-          <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/2013-08-14-20-35-02.html">Ofertas de Salas y
-              Vehículos</a></li>
+          <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/2013-08-14-20-35-02.html">Ofertas de salas y
+              vehículos</a></li>
           <li><a href="https://www.uniamazonia.edu.co/inicio/index.php/politica-de-privacidad.html">Política de
-              Privacidad</a></li>
+              privacidad</a></li>
           <li><a
               href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Superior/Acuerdos/2023/Acuerdo%20001%20-%20Por%20el%20cual%20se%20modifica%20de%20forma%20parcial%20el%20Estatuto%20de%20Propiedad%20Intelectual%20de%20la%20Universidad%20de%20la%20Amazonia.pdf">Política
-              de Derechos de Autor</a></li>
+              de derechos de autor</a></li>
           <li><a
               href="https://www.uniamazonia.edu.co/documentos/docs/Departamento%20de%20Tecnologias%20de%20la%20Informacion/Guias%20para%20los%20usuarios/Terminos%20y%20condiciones%20del%20sitio%20web%202025.pdf">Términos
               y condiciones</a></li>
           <li><a href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/mapa-de-sitio.html">Mapa del
               sitio</a></li>
-
         </ul>
       </div>
 
       <div class="enlacesFin__contactanos">
-        <p>CONTÁCTANOS</p>
-        <p>Sede Porvenir Calle 17 Diagonal 17 con Carrera 3F - Barrio Porvenir -
-          <a
-            href="https://www.uniamazonia.edu.co/inicio/index.php/es/programas/pregrado/ingenieria/ingenieria-de-sistemas.html#">Florencia,
-            Caquetá, Colombia, Suramérica</a>
-        </p>
-        <p>Atención Público: Lunes a Viernes de 7:30 a.m. a 11:30 m. - 1:30 p.m. a 5:30 p.m.</p>
-        <p>Contacto: <a href="mailto:atencionalciudadano@uniamazonia.edu.co">atencionalciudadano@uniamazonia.edu.co</a>
-        </p>
-        <p>PQRS-D: <a href="mailto:quejasyreclamos@uniamazonia.edu.co">quejasyreclamos@uniamazonia.edu.co</a></p>
-        <p>Notificaciones judiciales: <a href="mailto:njudiciales@uniamazonia.edu.co">njudiciales@uniamazonia.edu.co</a>
-        </p>
+        <h2 class="enlacesFin__subtitulo">Contáctanos</h2>
+        <address>
+          <p>Sede Porvenir: Calle 17 Diagonal 17 con Carrera 3F, barrio Porvenir, Florencia, Caquetá, Colombia,
+            Suramérica.</p>
+          <p>Atención al público: lunes a viernes de 7:30 a.m. a 11:30 m. - 1:30 p.m. a 5:30 p.m.</p>
+          <p>Contacto: <a
+              href="mailto:atencionalciudadano@uniamazonia.edu.co">atencionalciudadano@uniamazonia.edu.co</a></p>
+          <p>PQRS-D: <a href="mailto:quejasyreclamos@uniamazonia.edu.co">quejasyreclamos@uniamazonia.edu.co</a></p>
+          <p>Notificaciones judiciales: <a
+              href="mailto:njudiciales@uniamazonia.edu.co">njudiciales@uniamazonia.edu.co</a></p>
+        </address>
       </div>
 
       <div class="enlacesFin__redes">
-        <ul>
-          <li><a href="https://www.facebook.com/uniamazonia.edu.co"><i class="bi bi-facebook"></i></a></li>
-          <li><a href="https://www.instagram.com/uniamazonia/"><i class="bi bi-instagram"></i></a></li>
-          <li><a href="https://x.com/uniamazonia"><i class="bi bi-twitter-x"></i></a></li>
-          <li><a href="https://www.youtube.com/c/uamazonia"><i class="bi bi-youtube"></i></a></li>
-          <li><a href="https://www.tiktok.com/@uniamazonia"><i class="bi bi-tiktok"></i></a></li>
-          <li>@uniamazonia</li>
+        <h2 class="enlacesFin__subtitulo">Redes sociales</h2>
+        <ul class="enlacesFin__iconos">
+          <li><a href="https://www.facebook.com/uniamazonia.edu.co" aria-label="Facebook"><i
+                class="bi bi-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/uniamazonia/" aria-label="Instagram"><i
+                class="bi bi-instagram"></i></a></li>
+          <li><a href="https://x.com/uniamazonia" aria-label="X"><i class="bi bi-twitter-x"></i></a></li>
+          <li><a href="https://www.youtube.com/c/uamazonia" aria-label="YouTube"><i class="bi bi-youtube"></i></a></li>
+          <li><a href="https://www.tiktok.com/@uniamazonia" aria-label="TikTok"><i class="bi bi-tiktok"></i></a></li>
+          <li class="enlacesFin__usuario">@uniamazonia</li>
         </ul>
       </div>
 
       <div class="enlacesFin__localizacion">
-        <p>LOCALIZACIÓN FÍSICA</p>
-        <a href="/inicio/index.php/es/la-universidad/presentacion/localizacion-fisica.html"><img
-            src="https://www.uniamazonia.edu.co/inicio/images/banners/2024/Actualizaci%C3%B3n/Botones/Mapa.JPG"
-            alt="mapa uni amazonia"></a>
+        <h2 class="enlacesFin__subtitulo">Localización física</h2>
+        <a
+          href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/presentacion/localizacion-fisica.html">
+          <img src="https://www.uniamazonia.edu.co/inicio/images/banners/2024/Actualizaci%C3%B3n/Botones/Mapa.JPG"
+            alt="Mapa de ubicación de la Universidad de la Amazonia" loading="lazy">
+        </a>
       </div>
-    </section>
-
+    </div>
   </footer>
 
   <script src="js/bootstrap.bundle.js"></script>
